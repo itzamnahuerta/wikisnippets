@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import SearchBar from './SearchBar';
 import '../styles/GetArticles.css';
 import axios from 'axios';
+
 
 
 export default class GetArticles extends Component {
@@ -31,7 +33,7 @@ export default class GetArticles extends Component {
   render() {
     return (
       <div>
-        
+        <SearchBar />
       </div>
     )
   }
