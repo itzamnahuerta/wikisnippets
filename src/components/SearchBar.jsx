@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { MDBCol, MDBFormInline, MDBIcon } from "mdbreact";
 
 function SearchBar(props) {
@@ -24,4 +24,4 @@ function SearchBar(props) {
   )
 }
 
-export default SearchBar
+export default SearchBar;
