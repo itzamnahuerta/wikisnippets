@@ -32,9 +32,9 @@ export default class GetArticles extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <SearchBar />
-      </div>
+      </React.Fragment>
     )
   }
 }
