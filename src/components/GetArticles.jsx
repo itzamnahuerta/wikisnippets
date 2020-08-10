@@ -18,6 +18,10 @@ export default class GetArticles extends Component {
   getAllArticles = async(event) => {
     try {
       const res = await axios.get(`https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=${this.state.searchQuery}&prop=info&inprop=url&utf8=&format=json`)
+      
+      this.setState({data: res, loading:true})
+      return res;
+
     } catch (e) {
       window.alert(e);
       console.log("~~~~ ⚠ api call error ⚠ ", e)
