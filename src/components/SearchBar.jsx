@@ -15,6 +15,7 @@ function SearchBar(props) {
           placeholder="Search" 
           aria-label="Search" 
           value={props.searchQuery}
+          onChange={props.onSearchChange}
         />
       </MDBFormInline > 
     </MDBCol>
