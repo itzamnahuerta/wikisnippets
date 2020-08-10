@@ -4,7 +4,6 @@ import '../styles/GetArticles.css';
 import axios from 'axios';
 
 
-
 export default class GetArticles extends Component {
   constructor(props){
     super(props);
