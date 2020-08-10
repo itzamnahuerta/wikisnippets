@@ -6,6 +6,7 @@ function SearchBar(props) {
     <MDBCol md="6" >
       <MDBFormInline 
         className="md-form" 
+        onSubmit={props.getAllArticles}
       >
         <MDBIcon icon="search" />
         
