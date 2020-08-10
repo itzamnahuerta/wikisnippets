@@ -30,6 +30,10 @@ export default class GetArticles extends Component {
     }
   }
 
+  onSearchChange = (e) => {
+    this.setState({searchQuery: e.target.value})
+  }
+
   render() {
     return (
       <React.Fragment>
