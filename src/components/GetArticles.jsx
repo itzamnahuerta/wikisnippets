@@ -39,6 +39,7 @@ export default class GetArticles extends Component {
       <React.Fragment>
         <SearchBar 
           searchQuery={this.state.searchQuery}
+          onSearchChange={this.onSearchChange}
         />
       </React.Fragment>
     )
