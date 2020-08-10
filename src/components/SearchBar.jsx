@@ -1,4 +1,5 @@
 import React from 'react'
+import { MDBCol, MDBFormInline, MDBIcon } from "mdbreact";
 
 function SearchBar(props) {
   return (
