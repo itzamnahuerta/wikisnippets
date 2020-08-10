@@ -17,6 +17,7 @@ function SearchBar(props) {
           aria-label="Search" 
           value={props.searchQuery}
           onChange={props.onSearchChange}
+          onSubmit={props.getAllArticles}
         />
       </MDBFormInline > 
     </MDBCol>
