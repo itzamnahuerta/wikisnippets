@@ -1,6 +1,6 @@
 import React from 'react'
 
-function SearchBar() {
+function SearchBar(props) {
   return (
     <div>
       <p> search bar who? </p>
