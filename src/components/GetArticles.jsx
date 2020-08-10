@@ -4,6 +4,17 @@ import axios from 'axios';
 
 
 export default class GetArticles extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      data: [],
+      loading: false,
+      searchQuery: '',
+      articlesList:null
+    }
+  }
+  
   render() {
     return (
       <div>
