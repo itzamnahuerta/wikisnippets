@@ -33,7 +33,9 @@ export default class GetArticles extends Component {
   render() {
     return (
       <React.Fragment>
-        <SearchBar />
+        <SearchBar 
+          searchQuery={this.state.searchQuery}
+        />
       </React.Fragment>
     )
   }
