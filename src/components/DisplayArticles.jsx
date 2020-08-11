@@ -1,17 +1,18 @@
 import React from 'react';
 
 function DisplayArticles(props) {
-  console.log("i am coming from display articles", props.data.data)
+  // console.log("i am coming from display articles", props.data.data)
 
 
 
   let renderArticles = () => {
-    // console.log(props.loading)
     if(props.loading) {
       let results = props.data.data;
-      console.log("tryna render these articles though => ",results.query.search)
+      return results.query.search.map(a => <p> {a.title} </p>)
+
+      // console.log("tryna render these articles though => ",results.query.search)
       // props.data.data.map()
-    }
+    } 
   }
 
   return (
