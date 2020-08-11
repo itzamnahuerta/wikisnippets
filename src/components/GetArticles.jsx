@@ -13,7 +13,7 @@ export default class GetArticles extends Component {
       data: [],
       loading: false,
       searchQuery: '',
-      articlesList:null
+      articlesList:[]
     }
   }
 
