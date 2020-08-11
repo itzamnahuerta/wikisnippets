@@ -46,7 +46,8 @@ export default class GetArticles extends Component {
         />
 
         <DisplayArticles
-        
+          data={this.state.data}
+          loading={this.state.loading}
         />
       </React.Fragment>
     )
