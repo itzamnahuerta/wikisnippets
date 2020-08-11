@@ -15,16 +15,17 @@ function DisplayArticles(props) {
       // console.log("tryna render these articles though => ",results);
       return results.query.search.map(article => ( 
         <MDBCol>
-        <MDBCard style={{ width: "22rem", margin:'1em' }}>
+        <MDBCard style={{ width: "22rem", margin:'1em' , backgroundColor: '#353FF2'}}>
           <MDBCardBody>
             <MDBCardTitle> 
             <a 
+            style={{color: '#C09CD9'}}
             href={ `https://en.wikipedia.org/wiki/${article.title.replace(regex, "_")}`}>  
             {article.title}
             </a>
             </MDBCardTitle>
             <MDBCardText>
-            <span dangerouslySetInnerHTML={{__html: article.snippet }}></span>
+            <span style={{color: '#D9CC1E'}} dangerouslySetInnerHTML={{__html: article.snippet }}></span>
             </MDBCardText>
           </MDBCardBody>
         </MDBCard>
