@@ -6,12 +6,20 @@ function DisplayArticles(props) {
 
 
   let renderArticles = () => {
+    let regex = / /g;
+
     if(props.loading) {
       let results = props.data.data;
-      console.log("tryna render these articles though => ",results);
+      // console.log("tryna render these articles though => ",results);
       return results.query.search.map(article => ( 
+      
       <div key={article.timestamps}>
-        <h4> {article.title} </h4>
+        <h4>
+          <a 
+            href={ `https://en.wikipedia.org/wiki/${article.title.replace(regex, "_")}`}>  
+          {article.title}
+          </a>
+        </h4>
         <span dangerouslySetInnerHTML={{__html: article.snippet }}></span>
       </div>
       )
