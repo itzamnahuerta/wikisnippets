@@ -13,7 +13,6 @@ function DisplayArticles(props) {
       <div key={article.timestamps}>
         <h4> {article.title} </h4>
         <span dangerouslySetInnerHTML={{__html: article.snippet }}></span>
-      {/* <p> {article.snippet} </p> */}
       </div>
       )
       );
