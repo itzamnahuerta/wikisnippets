@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import GetArticles from './components/GetArticles';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <h1> WIKISNIPPET</h1>
       </header>
       <GetArticles />
+
     </div>
   );
 }
