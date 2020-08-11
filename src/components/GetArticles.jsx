@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './SearchBar';
 import '../styles/GetArticles.css';
 import axios from 'axios';
+import DisplayArticles from './DisplayArticles';
 
 
 export default class GetArticles extends Component {
@@ -42,6 +43,10 @@ export default class GetArticles extends Component {
           searchQuery={this.state.searchQuery}
           onSearchChange={this.onSearchChange}
           getAllArticles={this.getAllArticles}
+        />
+
+        <DisplayArticles
+        
         />
       </React.Fragment>
     )
