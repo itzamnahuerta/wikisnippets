@@ -10,7 +10,7 @@ function App() {
         <h1> WIKISNIPPET</h1>
       </header>
       <GetArticles />
-
+      <Footer />
     </div>
   );
 }
