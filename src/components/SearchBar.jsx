@@ -3,7 +3,7 @@ import { MDBCol, MDBFormInline, MDBIcon } from "mdbreact";
 
 function SearchBar(props) {
   return (
-    <MDBCol md="6" >
+    <MDBCol md="6" style={{marginBottom:"5em"}}>
       <MDBFormInline 
         className="md-form" 
         onSubmit={props.getAllArticles}

@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Footer.css';
+import { MDBFooter } from "mdbreact";
 
 function Footer() {
   return (
-    <div className="footer">
+    <MDBFooter style={{color: "blue", marginTop: "110%"}} >
       <span> © </span> <span> Itzamna Huerta </span>
-    </div>
+    </MDBFooter>
+
   )
 }
 

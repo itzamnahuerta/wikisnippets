@@ -5,8 +5,6 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreac
 function DisplayArticles(props) {
   // console.log("i am coming from display articles", props.data.data)
 
-
-
   let renderArticles = () => {
     let regex = / /g;
 
@@ -30,17 +28,6 @@ function DisplayArticles(props) {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-
-
-      // <div key={article.timestamps}>
-      //   <h4>
-      //     <a 
-      //       href={ `https://en.wikipedia.org/wiki/${article.title.replace(regex, "_")}`}>  
-      //     {article.title}
-      //     </a>
-      //   </h4>
-      //   <span dangerouslySetInnerHTML={{__html: article.snippet }}></span>
-      // </div>
       )
       );
     } 

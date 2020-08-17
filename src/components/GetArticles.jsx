@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SearchBar from './SearchBar';
-import '../styles/GetArticles.css';
 import axios from 'axios';
 import DisplayArticles from './DisplayArticles';
 
@@ -28,7 +27,7 @@ export default class GetArticles extends Component {
 
     } catch (e) {
       window.alert(e);
-      console.log("~~~~ ⚠ api call error ⚠ ", e)
+      // console.log("~~~~ ⚠ api call error ⚠ ", e)
     }
   }
 
